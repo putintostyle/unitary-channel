@@ -53,13 +53,13 @@ loglog(Udiff);
 title('Difference Between Iterations', 'FontSize',14);
 xlabel('Iteration');
 ylabel('$\frac{1}{2}\|U^{(s)}-U^{(s+1)}\|_F^2$', 'FontSize',18, 'Interpreter','latex');
-% savefig('example1_diffU');
-% saveas(gca, 'example1_diffU', 'eps')
+savefig('example3_diffU');
+% saveas(gca, 'example3_diffU', 'eps')
 %%
 figure(2);
 loglog(ResAll);
 xlabel('Iteration');
 ylabel('Objective function');
 title('$\frac{1}{2}\|\sigma-U^{(s)}\rho (U^{(s)})^\dagger\|_F^2$', 'FontSize',18, 'Interpreter','latex');
-% savefig('example1_obj');
-% saveas(gca, 'example1_obj', 'eps')
+% savefig('example3_obj');
+% saveas(gca, 'example3_obj', 'eps')
